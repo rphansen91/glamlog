@@ -1,6 +1,6 @@
 const glamlog = require('./index')
 
-glamlog('Hello Glamlog', 'bold,green,white_bg')
+glamlog('Hello Glamlog', 'bold,green,bg_white')
 spacer()
 
 const types = {

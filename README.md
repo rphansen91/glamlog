@@ -10,7 +10,7 @@ Usage
 
 ```javascript
 const glamlog = require('glamlog')
-glamlog('Hello Glamlog', 'bold,green,white_bg')
+glamlog('Hello Glamlog', 'bold,green,bg_white')
 ```
 
 Formats
