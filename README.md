@@ -1,9 +1,10 @@
 Glamlog
 =======
 
-Style console output in Nodejs applications
+Output colorful messages to the command line
 
 ![Usage](https://rphansen91.github.io/glamlog/public/usage.png)
+
 
 Usage
 -----
