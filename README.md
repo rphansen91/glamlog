@@ -3,6 +3,8 @@ Glamlog
 
 Style console output in Nodejs applications
 
+![Usage](https://rphansen91.github.io/glamlog/public/usage.png)
+
 Usage
 -----
 
@@ -14,11 +16,17 @@ glamlog('Hello Glamlog', 'bold,green,white_bg')
 Formats
 -------
 
+![Formats](https://rphansen91.github.io/glamlog/public/formats.png)
+
 Colors
 ------
 
+![Colors](https://rphansen91.github.io/glamlog/public/colors.png)
+
 Backgrounds
 -----------
+
+![Backgrounds](https://rphansen91.github.io/glamlog/public/backgrounds.png)
 
 Example
 -------
@@ -34,3 +42,5 @@ const O = glamlog.style('O','magenta')
 const W = glamlog.style('W','red')
 glamlog([R,A,I,N,B,O,W].join(''))
 ```
+
+![Rainbow](https://rphansen91.github.io/glamlog/public/rainbow.png)

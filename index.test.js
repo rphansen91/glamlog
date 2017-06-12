@@ -1,5 +1,9 @@
 const glamlog = require('./index')
 
+spacer()
+glamlog('Hello Glamlog', 'bold,green,white_bg')
+spacer()
+
 const R = glamlog.style('R','red')
 const A = glamlog.style('A','cyan')
 const I = glamlog.style('I','yellow')
@@ -31,5 +35,5 @@ function glam (style) {
 }
 
 function spacer () {
-  glamlog('\n\n\n')
+  glamlog('\n\n')
 }
