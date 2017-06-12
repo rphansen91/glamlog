@@ -1,0 +1,12 @@
+{
+  "name": "glamlog",
+  "version": "1.0.0",
+  "description": "Output colorful messages to the command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./index.test.js"
+  },
+  "keywords": ["output", "colors"],
+  "author": "Ryan P. Hansen",
+  "license": "ISC"
+}
