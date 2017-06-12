@@ -1,19 +1,6 @@
 const glamlog = require('./index')
 
-spacer()
 glamlog('Hello Glamlog', 'bold,green,white_bg')
-spacer()
-
-const R = glamlog.style('R','red')
-const A = glamlog.style('A','cyan')
-const I = glamlog.style('I','yellow')
-const N = glamlog.style('N','green')
-const B = glamlog.style('B','blue')
-const O = glamlog.style('O','magenta')
-const W = glamlog.style('W','red')
-
-spacer()
-glamlog([R,A,I,N,B,O,W].join(''))
 spacer()
 
 const types = {
@@ -24,11 +11,13 @@ const types = {
 
 Object.keys(types)
 .map(function (t) {
-  spacer()
-  glamlog(t + '\n')
+  glamlog(t + '\n', 'bold, underline')
   types[t].map(glam)
   spacer()
 })
+
+glamlog.rainbow('All the colors of the rainbow', 'bold')
+spacer()
 
 function glam (style) {
   glamlog(style, style)

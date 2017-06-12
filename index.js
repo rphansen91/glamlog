@@ -1,4 +1,5 @@
 const styles = require('./styles')
+const rainbow = require('./rainbow')
 
 function output (message, s) {
   if (s) message = output.style(message, s)
@@ -7,24 +8,37 @@ function output (message, s) {
 }
 
 output.style = function (m, s) {
-  if (typeof s === 'string') s = s.replace(/\ /g, '').split(',')
+  return chose(s)
+  .reduce(style, m)
+}
+
+output.rainbow = function (m, s) {
+
+  function styleChar (char, c) {
+    return output.style(char, chose(s).concat([c]))
+  }
+
+  output(rainbow(m, styleChar))
+}
+
+function chose (s) {
+  if (typeof s === 'string') return chose(s.split(','))
 
   return (s || [])
   .map(trim)
   .filter(valid)
-  .reduce(style, m)
 }
 
 function trim (s) {
   return s.trim()
 }
 
-function style (m, s) {
-  return `\x1b[${styles[s]}${m}\x1b[0m`
-}
-
 function valid (s) {
   return styles[s]
+}
+
+function style (m, s) {
+  return `\x1b[${styles[s]}${m}\x1b[0m`
 }
 
 module.exports = output
