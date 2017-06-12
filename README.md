@@ -1,10 +1,9 @@
+![Usage](https://rphansen91.github.io/glamlog/public/usage.png)
+
 Glamlog
 =======
 
 Output colorful messages to the command line
-
-![Usage](https://rphansen91.github.io/glamlog/public/usage.png)
-
 
 Usage
 -----
